@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Construction</title>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
+  <head>
+  </head>
 
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
+  <body>
+    <div class="header">
+      <div class="name">Aki-Yap Trading Joint Stock Company</div>
 
-<body>
-<%= yield %>
-</body>
+      <div class="wrapper">
+        <li class="active"><%= link_to 'Home Page', welcome_index_path%></li>
+        <li><%= link_to 'About Us', welcome_about_us_path %></li>
+        <li><%= link_to 'Our Projects', welcome_buildings_path %></li>
+        <li><%= link_to 'Contact', welcome_contact_path %></li>
+      </div>
+
+      <div class="center-text">
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+        <%= stylesheet_link_tag 'design', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+      </div>
+
+      <div class="footer">
+        We would like to see you..
+        <p>Berkan Gezgin - August 2020</p>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+  </footer>
 </html>
+
