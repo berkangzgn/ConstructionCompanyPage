@@ -1,11 +1,18 @@
-<head>
-  <title>Buildings</title>
-</head>
+<% content_for :page_title, 'Our Projects' %>
+<div class="center-text">
 
-<body>
-  <div class="center-text">
-    <p>Buraya fotograf eklenecektir.</p>
-  </div>
+    <ul class="image">
+      <li><%= image_tag 'building1.jpg' %></li>
+      <li><%= image_tag 'building2.jpg' %></li>
+      <li><%= image_tag 'building3.jpg' %></li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            $('.image').image({
+                captions: true
+            });
+        });
+    </script>
+    <%= image_tag 'building4.jpg' %>
 </div>
-</body>
 

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title><%= yield :page_title %></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
+    <link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" />
   </head>
 
   <body>
+    <%=yield %>
     <div class="header">
       <div class="name">Aki-Yap Trading Joint Stock Company</div>
 
@@ -21,14 +26,18 @@
         <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
       </div>
 
+      <div class="image">
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+        <%= stylesheet_link_tag 'design', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+      </div>
+
       <div class="footer">
         We would like to see you..
         <p>Berkan Gezgin - August 2020</p>
       </div>
     </div>
   </body>
-
-  <footer>
-  </footer>
 </html>
 
