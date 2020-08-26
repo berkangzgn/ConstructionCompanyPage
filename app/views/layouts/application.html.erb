@@ -2,9 +2,6 @@
 <html>
   <head>
     <title><%= yield :page_title %></title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
-    <link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -26,7 +23,7 @@
         <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
       </div>
 
-      <div class="image">
+      <div class="w3-content w3-display-container">
         <%= csrf_meta_tags %>
         <%= csp_meta_tag %>
         <%= stylesheet_link_tag 'design', media: 'all', 'data-turbolinks-track': 'reload' %>
