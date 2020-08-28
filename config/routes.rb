@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   get 'welcome/index'
   get 'welcome/buildings'
   get 'welcome/about_us'

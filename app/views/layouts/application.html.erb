@@ -2,6 +2,11 @@
 <html>
   <head>
     <title><%= yield :page_title %></title>
+    <%= yield :head %>
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'design', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
@@ -17,16 +22,10 @@
       </div>
 
       <div class="center-text">
-        <%= csrf_meta_tags %>
-        <%= csp_meta_tag %>
-        <%= stylesheet_link_tag 'design', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
       </div>
 
       <div class="w3-content w3-display-container">
-        <%= csrf_meta_tags %>
-        <%= csp_meta_tag %>
-        <%= stylesheet_link_tag 'design', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%#= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
       </div>
 

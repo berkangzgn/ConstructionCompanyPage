@@ -1,35 +1,37 @@
 <% content_for :page_title, 'Our Project' %>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-  .mySlides {display:none;}
-</style>
+<% content_for :head do  %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .mySlides {display:none;}
+  </style>
 
+<% end %>
   <div class="center-text w3-display-container">
 
     <div class="w3-display-container mySlides">
-      <%=image_tag src="building1.jpg"%>
+      <%= image_tag "building1.jpg" %>
       <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
         French Alps
       </div>
     </div>
 
     <div class="w3-display-container mySlides">
-      <%=image_tag src="building2.jpg"%>
+      <%= image_tag "building2.jpg" %>
       <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
         Northern Lights
       </div>
     </div>
 
     <div class="w3-display-container mySlides">
-      <%=image_tag src="building3.jpg"%>
+      <%= image_tag "building3.jpg" %>
       <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
         Beautiful Mountains
       </div>
     </div>
 
     <div class="w3-display-container mySlides">
-      <%=image_tag src="building4.jpg"%>
+      <%= image_tag "building4.jpg" %>
       <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
         The Rain Forest
       </div>
